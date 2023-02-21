@@ -1,4 +1,4 @@
-package com.example.bot.Utils;
+package com.example.bot.utils;
 
 import com.example.bot.model.ZodiacSign;
 import com.example.bot.repositories.ZodiacSignRepository;

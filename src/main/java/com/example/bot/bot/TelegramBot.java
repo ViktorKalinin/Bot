@@ -1,6 +1,6 @@
 package com.example.bot.bot;
 
-import com.example.bot.Utils.SiteParser;
+import com.example.bot.utils.SiteParser;
 import com.example.bot.config.BotConfig;
 import com.example.bot.repositories.ZodiacSignRepository;
 import org.springframework.beans.factory.annotation.Autowired;
