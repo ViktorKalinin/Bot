@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: root
+    password: Qwzxqwzx1
+    url: jdbc:postgresql://localhost:5432/tg_bot
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database: postgresql
+
+bot:
+  name: Horoscope21Bot
+  token: 6066792990:AAGnDZGlVFrk0BDvKbnmlqiBLp6ClZMtoJU
+
+
