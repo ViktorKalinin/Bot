@@ -13,7 +13,6 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 @AllArgsConstructor
 public class BotInitializer {
     private TelegramBot bot;
-
     @EventListener({ContextRefreshedEvent.class})
     public void init(){
         TelegramBotsApi telegramBotsApi;

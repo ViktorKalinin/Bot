@@ -12,7 +12,6 @@ import java.io.IOException;
 @Service
 public class SiteParser {
     private final ZodiacSignRepository zodiacSignRepository;
-
     public SiteParser(ZodiacSignRepository zodiacSignRepository) {
         this.zodiacSignRepository = zodiacSignRepository;
     }

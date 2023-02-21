@@ -13,11 +13,9 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.objects.commands.scope.BotCommandScopeDefault;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 
 @Component
 public class TelegramBot extends TelegramLongPollingBot {
@@ -51,7 +49,6 @@ public class TelegramBot extends TelegramLongPollingBot {
             Message messageText = update.getMessage();
             String chatId = messageText.getChatId().toString();
             String text = messageText.getText();
-
             if(text.equals("/start")){
                 startCommand(chatId);
             } else if(text.equals(zodiacSignQuery.findSign(text))){
@@ -80,8 +77,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         message.setChatId(chatId);
         message.setText(textToSend);
         message.setReplyMarkup(keyBoard.getKeyboardMarkup());
-
-
         try {
             execute(message);
         } catch (TelegramApiException e) {
